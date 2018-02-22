@@ -1,0 +1,59 @@
+h1 {
+	font-family: "Open Sans";
+	color: #000;
+	padding: 0px 20px 0px 20px;
+}
+h2 {
+	font-weight: normal;
+	color: black;
+}
+h3, b {
+	color:purple;
+}
+body {
+	color: #666;
+	font-family: "Open Sans";
+	font-size:14px;
+	display: block;
+	margin: auto;
+	max-width: 640px;
+}
+a {
+	color: purple;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+p {
+	margin-top: -10px;
+}
+div {
+	max-width: 640px;
+    padding: 0px 20px 10px 20px;
+    margin: 0 auto;
+}
+img {
+	float:left;
+	width: 200px;
+	margin-right:20px;
+}
+ul {
+    padding: 10px;
+    background-color: #fafafa;
+}
+li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+}
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #eee;
+}
+input[type="submit"] {
+    background: purple;
+    color: white;
+}
