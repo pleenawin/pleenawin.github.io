@@ -133,7 +133,7 @@ input[type=submit] {
 .col {
   flex-direction: column;
   float: left;
-  width: 33.33%;
+  width: 50%;
 }
 .row {
   display: flex;
@@ -149,24 +149,16 @@ input[type=submit] {
     width: 100%; 
     display: inline-block;
   }
-  #globalnav {
-    width:100%;
-    display: none;
-    float: right;
-  }
-  #globalnav nav li {
-    display: block;
-    float: left;
-  }
+  
   input, textarea {
     display: block;
     width: 100%;
   }
-  #navdrawer {
+  /*#navdrawer {
     width: 100%;
     display: flex;
     color: rgba(68,51,87,1);
     cursor: pointer;
     justify-content: flex-end;
-  }
+  }*/
 }
