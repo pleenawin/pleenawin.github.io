@@ -43,7 +43,8 @@ body {
 }
 
 .disabled {
-  color: rgba(20,174,169,.48);
+  opacity: .48;
+  cursor: not-allowed;
 }
 
 .space {
@@ -52,11 +53,17 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(20,174,169);
+  color: rgba(68,51,87,1);
+  cursor: pointer;
 }
 
 a:hover {
-  color: rgb(68,51,87);
+  color: rgb(20,174,169);
+  transition: 0.6s ease;
+}
+
+h3 a {
+color: white;
 }
 
 header {
@@ -103,6 +110,10 @@ input, textarea {
   font-size: 16px;
 }
 
+.active-nav {
+  border-bottom: 1px solid;
+}
+
 input[type=submit] {
   background-color: rgba(20,174,169,1);
   font-weight: 700;
@@ -111,9 +122,9 @@ input[type=submit] {
   font-size: 18px;
 }
 
-#navdrawer {
+/*#navdrawer {
     display: none;
-  }
+  }*/
 
 
 /******************************************
@@ -149,7 +160,7 @@ input[type=submit] {
     width: 100%; 
     display: inline-block;
   }
-  
+
   input, textarea {
     display: block;
     width: 100%;
