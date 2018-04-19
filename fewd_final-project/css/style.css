@@ -42,10 +42,6 @@ body {
   display: inline-block;
 }
 
-#globalnav nav {
-  float: right;
-}
-
 .disabled {
   color: rgba(20,174,169,.48);
 }
@@ -143,6 +139,7 @@ input[type=submit] {
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /******************************************
@@ -154,10 +151,14 @@ input[type=submit] {
     width: 100%; 
     display: inline-block;
   }
-  nav {
+  #globalnav {
     width:100%;
-    float: right;
     display: none;
+    float: right;
+  }
+  #globalnav nav li {
+    display: block;
+    float: left;
   }
   input, textarea {
     display: block;
@@ -165,10 +166,9 @@ input[type=submit] {
   }
   #navdrawer {
     width: 100%;
-    display: block;
-    float: right;
+    display: flex;
     color: rgba(68,51,87,1);
     cursor: pointer;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
