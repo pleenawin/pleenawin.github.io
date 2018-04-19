@@ -11,8 +11,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var indicator = document.getElementsByClassName("circle");
+  var slides = document.getElementsByClassName("slides");
+  var indicator = document.getElementsByClassName("control");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
