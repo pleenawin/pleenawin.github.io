@@ -65,6 +65,7 @@ a:hover {
 
 header {
   margin-bottom: 3em;
+  justify-content: space-between;
 }
 
 h1 {
@@ -168,5 +169,6 @@ input[type=submit] {
     float: right;
     color: rgba(68,51,87,1);
     cursor: pointer;
+    justify-content: space-between;
   }
 }
