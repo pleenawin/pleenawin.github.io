@@ -131,11 +131,9 @@ input[type=submit] {
 }
 
 .col {
-  display: flex;
-  flex-grow: 1;
   flex-direction: column;
   float: left;
-  width: 50%;
+  width: 33.33%;
 }
 .row {
   display: flex;
