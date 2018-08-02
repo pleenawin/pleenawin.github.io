@@ -1,0 +1,180 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/******************************************
+/* STYLES
+/*******************************************/
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(51,38,39,.75);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#globalnav li {
+  font-size: 16px;
+  font-family: 'Prata', serif;
+  text-transform: capitalize;
+  padding: 0 16px 0 0;
+  display: inline-block;
+}
+
+.disabled {
+  opacity: .48;
+  cursor: not-allowed;
+}
+
+.space {
+  padding-top: 2em;
+}
+
+a {
+  text-decoration: underline;
+  color: rgba(68,51,87,1);
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(35,178,75);
+  transition: 0.6s ease;
+}
+
+h3 a {
+color: white;
+}
+
+header {
+  margin-bottom: 3em;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Baloo', serif;
+  color: rgba(51,38,39,1);
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: 'Baloo', serif;
+  color: rgba(68,51,87,1);
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Baloo', serif;
+  color: rgba(68,51,87,1);
+  font-size: 1.5em;
+}
+
+h6 {
+  color: rgba(68,51,87,.5);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+input, textarea {
+  display: block;
+  border: 1px solid rgba(68,51,87,.25);
+  font-family: 'Montserrat', serif;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 72%;
+}
+
+::placeholder, footer {
+  color: rgba(51,38,39,.5);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.active-nav {
+  border-bottom: 1px solid;
+}
+
+#mainlogo {
+  padding: 32px 0 16px 0;
+}
+
+input[type=submit] {
+  background-color: rgba(20,174,169,1);
+  font-weight: 700;
+  color: white;
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+/*#navdrawer {
+    display: none;
+  }*/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+#logo {
+  height: 24px;
+  float: left;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+  float: left;
+  width: 50%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/******************************************
+/* RESPONSIVE
+/*******************************************/
+
+@media (max-width: 375px) {
+  .stack {
+    width: 100%; 
+    display: inline-block;
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+  }
+  /*#navdrawer {
+    width: 100%;
+    display: flex;
+    color: rgba(68,51,87,1);
+    cursor: pointer;
+    justify-content: flex-end;
+  }*/
+}
