@@ -19,45 +19,27 @@
   height: 0;
 }
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-@import url('https://rsms.me/inter/inter-ui.css');
-
 /******************************************
 /* STYLES
 /*******************************************/
 
 body {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  color: rgba(51,38,39,.80);
-  font-family: 'Inter UI', sans-serif;
+  color: rgba(51,38,39,.75);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  max-width: 800px;
+  max-width: 580px;
   margin: 0 auto;
   padding: 16px;
 }
 
 #globalnav li {
-  font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-family: 'Prata', serif;
   text-transform: capitalize;
-  padding: 0.5em 1em 0 0;
+  padding: 0 16px 0 0;
   display: inline-block;
-}
-
-#globalnav a {
-  color: rgba(51,38,39,.80);
-}
-
-#globalnav a:hover {
-  color: rgba(35,175,75,1.0);
-  transition: 0.8s ease;
-}
-
-.active-nav {
-  font-weight: 600;
-  color: rgba(51,38,39,1);
 }
 
 .disabled {
@@ -66,18 +48,22 @@ body {
 }
 
 .space {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 a {
-  color: rgba(35,178,75,1);
+  text-decoration: underline;
+  color: rgba(68,51,87,1);
   cursor: pointer;
-  text-decoration: none;
 }
 
 a:hover {
-  color: rgb(51,38,39);
-  transition: 0.8s ease;
+  color: rgb(35,178,75);
+  transition: 0.6s ease;
+}
+
+h3 a {
+color: white;
 }
 
 header {
@@ -86,24 +72,21 @@ header {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-family: 'Baloo', serif;
   color: rgba(51,38,39,1);
-  font-size: 2em;
-  padding-bottom: 0.5em;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: rgba(51,38,39,1);
-  font-size: 1.5em;
+  font-family: 'Baloo', serif;
+  color: rgba(68,51,87,1);
+  font-size: 2em;
 }
 
 h3 {
-  font-family: 'Inter UI', sans-serif;
-  font-size: 1.25em;
-  color: rgba(51,38,39,1);
+  font-family: 'Baloo', serif;
+  color: rgba(68,51,87,1);
+  font-size: 1.5em;
 }
 
 h6 {
@@ -112,26 +95,24 @@ h6 {
   font-weight: 700;
 }
 
-p {
-  padding-bottom:2em;
-}
-
 input, textarea {
   display: block;
   border: 1px solid rgba(68,51,87,.25);
-  font-family: 'Inter UI', sans-serif;
-  font-size: 1em;
+  font-family: 'Montserrat', serif;
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 16px;
   width: 72%;
 }
 
-footer {
+::placeholder, footer {
   color: rgba(51,38,39,.5);
-  font-size: .75em;
+  font-size: 12px;
   text-transform: uppercase;
-  margin-top: 4em;
+}
+
+.active-nav {
+  border-bottom: 1px solid;
 }
 
 #mainlogo {
@@ -139,16 +120,16 @@ footer {
 }
 
 input[type=submit] {
-  background-color: rgba(35,178,75,1);
+  background-color: rgba(20,174,169,1);
   font-weight: 700;
   color: white;
   margin-top: 16px;
-  font-size: 1em;
+  font-size: 18px;
 }
-strong {
-  font-family: 'Inter UI', sans-serif;
-  font-weight: bold;
-}
+
+/*#navdrawer {
+    display: none;
+  }*/
 
 
 /******************************************
@@ -165,20 +146,10 @@ strong {
   display: flex;
 }
 
-.col-2 {
+.col {
   flex-direction: column;
   float: left;
   width: 50%;
-}
-.col-4 {
-  flex-direction: column;
-  float: left;
-  width: 25%;
-}
-.col-3q {
-  flex-direction: column;
-  float: left;
-  width: 75%;
 }
 .row {
   display: flex;
@@ -189,7 +160,7 @@ strong {
 /* RESPONSIVE
 /*******************************************/
 
-@media (max-width: 470px) {
+@media (max-width: 375px) {
   .stack {
     width: 100%; 
     display: inline-block;
@@ -199,4 +170,11 @@ strong {
     display: block;
     width: 100%;
   }
+  /*#navdrawer {
+    width: 100%;
+    display: flex;
+    color: rgba(68,51,87,1);
+    cursor: pointer;
+    justify-content: flex-end;
+  }*/
 }
