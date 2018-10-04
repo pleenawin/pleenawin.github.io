@@ -47,6 +47,10 @@
   display: none;
 }
 
+.mySlides img {
+  display: block;
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -94,7 +98,7 @@
 .caption-container {
   text-align: center;
   background-color: black;
-  padding: 1.25em 0 1.5em 0;
+  padding: .75em 0 1.5em 0;
   color: white;
 }
 
