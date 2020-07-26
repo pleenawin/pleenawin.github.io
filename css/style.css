@@ -93,6 +93,10 @@ input, textarea {
   width: 72%;
 }
 
+ol, ul {
+  padding-left: 24px;
+}
+
 footer {
   color: rgba(51,38,39,.5);
   font-size: .875em;
