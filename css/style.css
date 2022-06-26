@@ -42,8 +42,32 @@ a {
 }
 
 a:hover {
-  color: rgb(51,38,39);
+  color: rgba(35,178,75,1);
   transition: 0.8s ease;
+}
+
+.hover-ani {
+  display: inline-block;
+  position: relative;
+  color: rgba(35,178,75,1);
+}
+
+.hover-ani:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(35,178,75,1);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-ani:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 header {
@@ -94,7 +118,8 @@ input, textarea {
 }
 
 ol, ul {
-  padding-left: 24px;
+  padding: 0px 0px 12px 48px;
+  margin: -24px 0px 0px 0px;
 }
 
 footer {
@@ -143,6 +168,10 @@ strong {
 #globalnav a:hover {
   color: rgba(35,175,75,1.0);
   transition: 0.8s ease;
+}
+
+#globalnav ol, ul {
+  padding: 24px 0px 24px 24px;
 }
 
 .active-nav {
